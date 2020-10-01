@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js03_fucao.htm</title>
+<meta http-equiv="Content-Type" content="type/html" charset=iso-8859-1>
+<meta http-equiv="Content-Type" content="type/html" charset="utf-8">
+<meta charset="utf-8" />
+</head>
+<body>
+<h3>Somatoria de dois numeros inteiros</h3>
+
+<form name="Meuformulario action="" method="post" >
+	Entre com o valor 1  <input type="text" name="f_n1" /><p></p>
+	Entre com o valor 2  <input type="text" name="f_n2" /><p></p>
+	<input type="button" name="btn_somar" value="Somar" onclick="soma()" />
+	<input type="reset" name="btn_apagar" value="Apagar" >
+</form>
+<script type="text/javascript">
+	var js_n1;
+	var js_n2;
+	var js_soma
+
+	function soma() {
+		js_n1 = parsetInt(document.Meuformulario.f_n1.value);
+		js_n2 = parsetInt(document.Meuformulario.f_n2.value);
+		js_soma = js_n1 + js_n2;
+
+		window.alert('Resultado da somatória = ' + js_soma.toString());
+	}
+</script>
+</body>
+</html>

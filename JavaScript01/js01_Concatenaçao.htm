@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>js01_Concatenaçao.htm</title>
+  <meta http-equiv="Content-Type" content="text/html"; charset="iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+  <meta charset="utf-8"/>
+
+</head>
+<body>
+    <h3>Programa de Boas Vindas com Concatenação de Campos!</h3>
+    <form name="formConcatena" action="" method="post">
+      Digite o nome ........: <input type="text" name="f_nome" /><br />
+      Digite o sobrenome ...: <input type="text" name="f_sobrenome" /><br />
+      <input type="button" name="btn_concatena" value="Concatenar" onclick="concatenar()" />
+      <input type="reset" name="btn_cancela" value="cancelar" />  
+    </form>
+<script language="javascript">
+/* Objetivos */
+
+/* Definição de Variáveis */
+  var js_nome;
+  var js_sobrenome;
+  var js_nomecompleto;
+  function concatenar() {
+    js_nome = document.formConcatena.f_nome.value;
+    js_sobrenome = document.formConcatena.f_sobrenome.value;
+
+    js_nomecompleto = js_nome + ' ' + js_sobrenome;
+
+    window.alert('Olá' + js_nomecompleto);  
+  }
+/* Entrada de Dados */
+
+/* Saída de Dados */
+</script>
+</body>
+</html>
